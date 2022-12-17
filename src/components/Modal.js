@@ -13,7 +13,6 @@ const ModalContainer = styled.div`
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
   gap: 20px;
   padding: 30px;
-  overflow: scroll;
 `
 const Overlay = styled.div`
   background: rgba(0, 0, 0, 0.7);
@@ -29,8 +28,6 @@ const ModalTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 625px) {
-  }
 `
 const ModalBottom = styled.div`
   width: 100%;
