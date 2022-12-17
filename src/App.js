@@ -21,12 +21,18 @@ const Navbar = styled.div`
   height: 65px;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    /* justify-content: flex-end; */
+  }
 `
 const Logo = styled.img`
   width: 156px;
   height: 54px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
+  @media (max-width: 768px) {
+    transform: scale(.7) translateY(5px);
+  }
 `
 const SearchIcon = styled.img`
   width: 13px;
@@ -86,10 +92,8 @@ function App() {
     <div className="App">
       {/* Navbar */}
       <Navbar>
-        {/* Logo */}
-        <a href="/">
+        {/* Logo */}  
           <Logo src="./Logo.png" alt="" />
-        </a>
         {/* Search Bar */}
         <SearchBar>
           <SearchIcon src="./Union.png" alt="" />
